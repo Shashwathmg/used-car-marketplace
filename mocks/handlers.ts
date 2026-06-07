@@ -11,7 +11,7 @@ const cars = [
     fuelType: "Petrol",
     transmission: "Automatic",
     image:
-      "https://images.unsplash.com/photo-1555215695-3004980ad54",
+      "https://spn-sta.spinny.com/blog/20230522183738/BMW-M340i-1160x653.webp?compress=true&quality=80&w=1200&dpr=2.6",
     description:
       "Luxury SUV with premium interior."
   },
