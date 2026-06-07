@@ -1,36 +1,214 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Used Car Marketplace
 
-## Getting Started
+A modern Next.js application featuring a Calculator module and a Used Car Marketplace built with React, TypeScript, Zustand, and Tailwind CSS.
 
-First, run the development server:
+## Live Demo
+
+https://used-car-marketplace-sigma.vercel.app/
+
+## GitHub Repository
+
+https://github.com/Shashwathmg/used-car-marketplace
+
+---
+
+## Features
+
+### Calculator
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Clear functionality
+- Backspace functionality
+- Keyboard support
+- Responsive UI
+
+### Used Car Marketplace
+
+- Car listing page
+- Dynamic mock API integration
+- Search cars by make and model
+- Sort cars by:
+  - Price Low to High
+  - Price High to Low
+  - Newest
+  - Oldest
+
+- Car details modal popup
+- Responsive design
+- Interactive hover effects
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+
+### State Management
+
+- Zustand
+
+### Animations
+
+- Framer Motion
+- GSAP
+
+### Deployment
+
+- Vercel
+
+---
+
+## Project Structure
+
+```text
+app/
+├── api/
+│   └── cars/
+├── cars/
+├── page.tsx
+├── layout.tsx
+
+components/
+├── calculator/
+├── cars/
+
+hooks/
+├── useCalculator.ts
+├── useCars.ts
+
+store/
+├── calculatorStore.ts
+├── carsStore.ts
+
+types/
+├── car.ts
+
+public/
+├── favicon.ico
+├── og-image.png
+```
+
+## Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Shashwathmg/used-car-marketplace.git
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build Production Version
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Start Production Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Architecture Decisions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Why Next.js?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- App Router architecture
+- File-based routing
+- Built-in optimization
+- SEO support
+
+### Why TypeScript?
+
+- Type safety
+- Better maintainability
+- Improved developer experience
+
+### Why Zustand?
+
+- Lightweight state management
+- Minimal boilerplate
+- Easy scalability
+
+### Why Tailwind CSS?
+
+- Rapid UI development
+- Responsive design
+- Utility-first styling
+
+---
+
+## SEO Features
+
+- Metadata API
+- Custom page title
+- Meta description
+- Open Graph tags
+- Twitter Card support
+- Favicon support
+- Social sharing image
+
+---
+
+## AI Usage
+
+AI-assisted tools were used throughout the development process for:
+
+- Architecture brainstorming
+- UI/UX improvements
+- Component structure reviews
+- Code optimization suggestions
+- Technical validation
+
+All generated suggestions were reviewed, tested, modified where required, and fully understood before being incorporated into the final solution.
+
+---
+
+## Future Improvements
+
+- Advanced filtering
+- Pagination
+- Wishlist functionality
+- Authentication
+- Favorites management
+- Real backend integration
+- Unit and integration tests
+
+---
+
+## Author
+
+Shashwathagowda M
+
+GitHub:
+https://github.com/Shashwathmg
+
+Live Demo:
+https://used-car-marketplace-sigma.vercel.app/

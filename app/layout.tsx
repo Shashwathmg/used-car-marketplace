@@ -7,20 +7,28 @@ export const metadata: Metadata = {
   ),
 
   title: {
-    default: "Used Car Marketplace",
-    template: "%s | Used Car Marketplace",
+    default:
+      "Used Car Marketplace | Next.js, TypeScript & Zustand Project",
+
+    template:
+      "%s | Used Car Marketplace",
   },
 
   description:
-    "Browse premium used cars with search, sorting, and detailed vehicle information.",
+    "A modern used car marketplace built with Next.js, TypeScript, Zustand, and Tailwind CSS featuring search, sorting, responsive design, SEO optimization, and interactive vehicle detail modals.",
 
   keywords: [
     "used cars",
     "car marketplace",
+    "buy used cars",
     "BMW",
     "Audi",
     "Mercedes",
     "Next.js",
+    "TypeScript",
+    "Zustand",
+    "Tailwind CSS",
+    "frontend project",
   ],
 
   authors: [
@@ -29,15 +37,18 @@ export const metadata: Metadata = {
     },
   ],
 
+  creator: "Shashwathagowda M",
+
   icons: {
     icon: "/favicon.ico",
   },
 
   openGraph: {
-    title: "Used Car Marketplace",
+    title:
+      "Used Car Marketplace | Next.js, TypeScript & Zustand Project",
 
     description:
-      "Search, compare and explore premium used vehicles.",
+      "Browse premium used cars, compare prices, explore vehicle details, and experience a modern responsive marketplace built using Next.js and TypeScript.",
 
     url:
       "https://used-car-marketplace-sigma.vercel.app",
@@ -54,6 +65,8 @@ export const metadata: Metadata = {
       },
     ],
 
+    locale: "en_US",
+
     type: "website",
   },
 
@@ -61,10 +74,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Used Car Marketplace",
+      "Used Car Marketplace | Next.js, TypeScript & Zustand Project",
 
     description:
-      "Search and explore premium used cars.",
+      "Browse premium used cars, compare vehicle information, and explore a modern responsive marketplace experience.",
 
     images: [
       "/og-image.png",
@@ -74,12 +87,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
